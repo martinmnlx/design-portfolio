@@ -54,6 +54,12 @@ nav a:hover {
     color: white;
 }
 
+.nav-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 2rem 0;
+}
+
 h1 {
     font-family: 'Archivo Narrow';
     font-size: 9rem;
