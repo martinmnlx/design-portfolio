@@ -17,6 +17,8 @@ html {
     font-size: 11px;
     background-color: black;
     scroll-behavior: smooth;
+    scroll-padding: 1.5rem;
+    cursor: default;
 }
 
 body {
@@ -39,6 +41,11 @@ nav h1 {
     color: white;
     letter-spacing: 0;
     margin: 2rem 0 5rem 0;
+    transition: transform 0.2s ease;
+}
+
+nav h1:hover {
+    transform: scale(1.05);
 }
 
 nav a {
@@ -48,10 +55,15 @@ nav a {
     color: grey;
     text-decoration: none;
     margin: 0 0 1rem 0;
+    transition-duration: 0.2s;
 }
 
 nav a:hover {
     color: white;
+}
+
+.sub-button {
+    font-size: 1rem;
 }
 
 .nav-bottom {
@@ -67,18 +79,17 @@ h1 {
     color: white;
     letter-spacing: 0.5rem;
     margin: 0;
-}
+} 
 
 h2 {
     font-family: 'Departure Mono';
     font-size: 1.5rem;
     font-weight: normal;
-    color: white;
+    color: grey;
     margin: 0;
 }
 
 .body-container {
-    background-color: black;
     padding: 0 0 0 2rem;
     margin: 0 2rem 0 17rem;
 }
@@ -92,7 +103,7 @@ h2 {
 .about-section {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     padding: 0 0 5rem 0;
 }
 
@@ -114,6 +125,7 @@ h2 {
 }
 
 .work-section h2 {
+    font-size: 2rem;
     color: grey;
 }
 
@@ -127,11 +139,18 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     padding: 2rem 0 0 0;
+    margin: 0 0 2rem 0;
 }
 
 .image-container img {
     width: 400px;
     height: 500px;
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.02);
 }
 
 .contact-section {
